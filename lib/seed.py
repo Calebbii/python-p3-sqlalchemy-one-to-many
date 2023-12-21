@@ -39,6 +39,24 @@ if __name__ == '__main__':
 
         games.append(game)
 
+
+
+    #     reviews = []
+    # for game in games:
+    #     for i in range(random.randint(1,5)):
+    #         review = Review(
+    #             score=random.randint(0, 10),
+    #             comment=fake.sentence(),
+    #             game_id=game.id
+    #         )
+
+    #         reviews.append(review)
+    
+    # session.bulk_save_objects(reviews)
+    # session.commit()
+    # session.close()
+
+
     reviews = []
     for game in games:
         for i in range(random.randint(1,5)):
@@ -53,3 +71,5 @@ if __name__ == '__main__':
     session.bulk_save_objects(reviews)
     session.commit()
     session.close()
+
+
